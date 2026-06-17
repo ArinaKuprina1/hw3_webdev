@@ -1,0 +1,143 @@
+### HTML Document with CSS and JavaScript for New York Destination
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Destination</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-image: linear-gradient(to bottom, #333, #555);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Attraction Section Styles */
+        .attractions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .attraction {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            width: 80%;
+        }
+
+        .attraction img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        /* Map Section Styles */
+        .map-container {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .map-container img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .map-container .pin {
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .map-container .pin::after {
+            content: attr(data-pin);
+            position: absolute;
+            font-size: 14px;
+            top: -20px;
+            left: -20px;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>New York Destination</h1>
+        <p>New York is a state in the Northeastern United States. It is the 27th-most extensive, the 3rd-most populous, and the 7th-most densely populated of the 50 United States.</p>
+    </div>
+
+    <div class="attractions">
+        <h2>Top Attractions in New York</h2>
+        <div class="attraction">
+            <h3>Statue of Liberty</h3>
+            <p>The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor, designed by Frédéric Auguste Bartholdi and dedicated on October 28, 1886.</p>
+            <img src="https://image.pollinations.ai/prompt/statue%20of%20liberty%20new%20york%20travel%20photography%20beautiful%20high%20quality" alt="Statue of Liberty">
+            <p>Latitude: 40.6936, Longitude: -74.0463</p>
+        </div>
+
+        <div class="attraction">
+            <h3>Central Park</h3>
+            <p>Central Park is an urban park in Manhattan, New York City. It is one of the most iconic and visited parks in the world, with over 35 million visitors per year.</p>
+            <img src="https://image.pollinations.ai/prompt/central%20park%20new%20york%20travel%20photography%20beautiful%20high%20quality" alt="Central Park">
+            <p>Latitude: 40.7831, Longitude: -73.9653</p>
+        </div>
+
+        <div class="attraction">
+            <h3>Times Square</h3>
+            <p>Times Square is a major public square in the heart of Manhattan, New York City. It is known for its bright billboards, giant digital screens, and lively atmosphere.</p>
+            <img src="https://image.pollinations.ai/prompt/times%20square%20new%20york%20travel%20photography%20beautiful%20high%20quality" alt="Times Square">
+            <p>Latitude: 40.7583, Longitude: -73.9851</p>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <img src="https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=800&height=400&center=40.7831,-73.9653&zoom=12&markers=40.6936,-74.0463,1|40.7583,-73.9851,2|40.7831,-73.9653,3&key=YOUR_GEOAPIFY_API_KEY"
+             alt="Map of New York with 3 numbered pins marking the attraction locations">
+
+        <div class="pin" data-pin="1: Statue of Liberty">40.6936,-74.0463</div>
+        <div class="pin" data-pin="2: Central Park">40.7583,-73.9851</div>
+        <div class="pin" data-pin="3: Times Square">40.7831,-73.9653</div>
+    </div>
+</body>
+</html>
+```
+
+**Note:** Replace `YOUR_GEOAPIFY_API_KEY` with your actual Geoapify API key.
+
+**Attraction Coordinates:**
+
+* Attraction 1: Statue of Liberty (40.6936, -74.0463)
+* Attraction 2: Central Park (40.7831, -73.9653)
+* Attraction 3: Times Square (40.7583, -73.9851)
+
+**Map Center Coordinates:**
+
+* CENTER_LAT = (40.6936 + 40.7831 + 40.7583) / 3 = 40.7853
+* CENTER_LON = (-74.0463 + -73.9653 + -73.9851) / 3 = -73.9859
