@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New York Travel Guide</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+.hero { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 80px 20px; text-align: center; }
+.hero h1 { font-size: 3rem; margin-bottom: 16px; }
+.hero p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+.attractions { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; padding: 40px 24px; max-width: 1100px; margin: 0 auto; }
+.card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+.card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+.card-body { padding: 20px; }
+.card-body h2 { margin-bottom: 8px; font-size: 1.3rem; }
+.card-body p { color: #666; font-size: 0.95rem; }
+.map-section { padding: 40px 24px; max-width: 1100px; margin: 0 auto; }
+.map-section h2 { font-size: 1.8rem; margin-bottom: 20px; }
+.map-container { width: 100%; max-width: 1000px; height: 420px; margin: 0 auto 24px; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.18); border: 1px solid #ddd; }
+.map-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+th { background: #1a1a2e; color: white; padding: 14px 16px; text-align: left; }
+td { padding: 12px 16px; border-bottom: 1px solid #eee; }
+footer { background: #1a1a2e; color: white; text-align: center; padding: 24px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>New York</h1>
+  <p>New York is one of the world's most iconic cities, offering a diverse range of cultural, historical, and entertainment experiences.</p>
+</div>
+<div class="attractions">
+  <div class="card">
+    <img src="https://image.pollinations.ai/prompt/Statue%20of%20Liberty%20New%20York%20travel%20photography%20beautiful%20high%20quality" alt="Statue of Liberty">
+    <div class="card-body"><h2>Statue of Liberty</h2><p>The Statue of Liberty is an iconic symbol of freedom and democracy, located on Liberty Island in New York Harbor.</p></div>
+  </div>
+  <div class="card">
+    <img src="https://image.pollinations.ai/prompt/Central%20Park%20New%20York%20travel%20photography%20beautiful%20high%20quality" alt="Central Park">
+    <div class="card-body"><h2>Central Park</h2><p>Central Park is a large public park in Manhattan, offering a peaceful escape from the hustle and bustle of city life.</p></div>
+  </div>
+  <div class="card">
+    <img src="https://image.pollinations.ai/prompt/Times%20Square%20New%20York%20travel%20photography%20beautiful%20high%20quality" alt="Times Square">
+    <div class="card-body"><h2>Times Square</h2><p>Times Square is a bustling area in the heart of Manhattan, known for its bright lights, giant billboards, and lively entertainment options.</p></div>
+  </div>
+</div>
+<div class="map-section">
+  <h2>Map & Coordinates</h2>
+  <div class="map-container"><img src="https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=900&height=400&center=lonlat:-73.9989,40.7461&zoom=12&marker=lonlat:-74.0464,40.6935;color:%23e63946;size:medium|lonlat:-73.9653,40.7859;color:%23e63946;size:medium|lonlat:-73.9851,40.7589;color:%23e63946;size:medium&apiKey=c32e3a309c6d4f74866322cc6b07ab75" alt="Map of New York" /></div>
+  <table>
+    <tr><th>#</th><th>Attraction</th><th>Latitude</th><th>Longitude</th></tr>
+    <tr><td>1</td><td>Statue of Liberty</td><td>40.6935</td><td>-74.0464</td></tr>
+    <tr><td>2</td><td>Central Park</td><td>40.7859</td><td>-73.9653</td></tr>
+    <tr><td>3</td><td>Times Square</td><td>40.7589</td><td>-73.9851</td></tr>
+  </table>
+</div>
+<footer><p> 2026 Generated Travel Guide</p></footer>
+</body>
+</html>
