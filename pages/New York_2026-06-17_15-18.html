@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New York Travel Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      background-color: #333;
+      color: #fff;
+      padding: 64px;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+    .attraction-card {
+      background-color: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+      margin: 24px;
+      width: 48%;
+      float: left;
+    }
+    .attraction-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+    .attraction-card h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+    .attraction-card p {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .map-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      height: 420px;
+      margin: 24px auto;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+      border: 1px solid #ddd;
+      background: #e8eef3;
+    }
+    .map-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .map-table {
+      margin-top: 16px;
+      padding: 16px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+    }
+    .map-table th, .map-table td {
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    .map-table th {
+      background-color: #f0f0f0;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 16px;
+      text-align: center;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>New York</h1>
+    <p>The city that never sleeps! New York is a bustling metropolis with a rich history, diverse culture, and endless entertainment options.</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="attraction-card">
+          <img src="https://image.pollinations.ai/prompt/The%20Statue%20of%20Liberty%20New%20York%20Travel%20Photography%20High%20Quality" alt="The Statue of Liberty">
+          <h2>The Statue of Liberty</h2>
+          <p>One of the most iconic landmarks in the world, the Statue of Liberty is a symbol of freedom and democracy.</p>
+          <p>Latitude: 40.6939</p>
+          <p>Longitude: -74.0467</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="attraction-card">
+          <img src="https://image.pollinations.ai/prompt/Central%20Park%20New%20York%20Travel%20Photography%20Beautiful%20High%20Quality" alt="Central Park">
+          <h2>Central Park</h2>
+          <p>A tranquil oasis in the middle of Manhattan, Central Park is a must-visit for nature lovers and those seeking a break from the hustle and bustle.</p>
+          <p>Latitude: 40.7824</p>
+          <p>Longitude: -73.9654</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="attraction-card">
+          <img src="https://image.pollinations.ai/prompt/The%20Empire%20State%20Building%20New%20York%20Travel%20Photography%20High%20Quality" alt="The Empire State Building">
+          <h2>The Empire State Building</h2>
+          <p>An iconic skyscraper and one of the most recognizable landmarks in the world, the Empire State Building offers stunning views of the city.</p>
+          <p>Latitude: 40.7484</p>
+          <p>Longitude: -73.9857</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-container">
+    <img src="https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=900&height=400&center=lonlat:-74.0060,40.7128&zoom=13&marker=lonlat:-74.0467,40.6939;color:%23e63946;type:awesome;size:48;text:1|lonlat:-73.9654,40.7824;color:%23e63946;type:awesome;size:48;text:2|lonlat:-73.9857,40.7484;color:%23e63946;type:awesome;size:48;text:3&apiKey=9c32c7e1bff2443da2251169a68018ee"
+    alt="Map of New York"
+    class="map-image">
+  </div>
+  <div class="map-table">
+    <table>
+      <tr>
+        <th>Attraction #</th>
+        <th>Attraction Name</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>The Statue of Liberty</td>
+        <td>40.6939</td>
+        <td>-74.0467</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Central Park</td>
+        <td>40.7824</td>
+        <td>-73.9654</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>The Empire State Building</td>
+        <td>40.7484</td>
+        <td>-73.9857</td>
+      </tr>
+    </table>
+  </div>
+  <footer>
+    &copy; 2026 Generated Travel Guide
+  </footer>
+</body>
+</html>
