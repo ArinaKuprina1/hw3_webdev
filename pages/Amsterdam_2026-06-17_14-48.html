@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amsterdam Travel Guide</title>
+	<style>
+		/* Global Styles */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f9f9f9;
+		}
+		
+		/* Hero Section */
+		.hero {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.hero h1 {
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+		
+		.hero p {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		
+		/* Attraction Cards */
+		.attractions {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+			padding: 20px;
+		}
+		
+		.attraction-card {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			max-width: 300px;
+		}
+		
+		.attraction-card img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 10px 10px 0 0;
+		}
+		
+		.attraction-card h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		
+		.attraction-card p {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		
+		/* Map Section */
+		.map-container {
+			position: relative;
+			width: 100%;
+			max-width: 1000px;
+			height: 420px;
+			margin: 24px auto;
+			border-radius: 18px;
+			overflow: hidden;
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+			border: 1px solid #ddd;
+			background: #e8eef3;
+		}
+		
+		.map-image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+		
+		/* Footer */
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<!-- Hero Section -->
+	<section class="hero">
+		<h1>Amsterdam Travel Guide</h1>
+		<p>Discover the beauty and charm of Amsterdam, the capital city of the Netherlands.</p>
+	</section>
+	
+	<!-- Attraction Cards -->
+	<section class="attractions">
+		<article class="attraction-card">
+			<img src="https://image.pollinations.ai/prompt/anne%20frank%20house%20amsterdam%20travel%20photography%20beautiful%20high%20quality" alt="Anne Frank House">
+			<h2>Anne Frank House</h2>
+			<p>The Anne Frank House is a museum dedicated to the Jewish girl who wrote a diary during the Nazi occupation of the Netherlands.</p>
+			<p>Latitude: 52.3567° N</p>
+			<p>Longitude: 4.8944° E</p>
+		</article>
+		<article class="attraction-card">
+			<img src="https://image.pollinations.ai/prompt/rijksmuseum%20amsterdam%20travel%20photography%20beautiful%20high%20quality" alt="Rijksmuseum">
+			<h2>Rijksmuseum</h2>
+			<p>The Rijksmuseum is a museum that showcases Dutch art and history, including works by Rembrandt and Vermeer.</p>
+			<p>Latitude: 52.3547° N</p>
+			<p>Longitude: 4.8875° E</p>
+		</article>
+		<article class="attraction-card">
+			<img src="https://image.pollinations.ai/prompt/van%20gogh%20museum%20amsterdam%20travel%20photography%20beautiful%20high%20quality" alt="Van Gogh Museum">
+			<h2>Van Gogh Museum</h2>
+			<p>The Van Gogh Museum is a museum dedicated to the life and works of Vincent van Gogh, one of the most famous Dutch artists.</p>
+			<p>Latitude: 52.3547° N</p>
+			<p>Longitude: 4.8875° E</p>
+		</article>
+	</section>
+	
+	<!-- Map Section -->
+	<div class="map-container">
+		<img src="https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=900&height=400&center=lonlat:4.8952,52.3702&zoom=13&marker=lonlat:4.8852,52.3600;color:%23e63946;type:awesome;size:x-large;text:1|lonlat:4.8838,52.3752;color:%23e63946;type:awesome;size:x-large;text:2|lonlat:4.8945,52.3731;color:%23e63946;type:awesome;size:x-large;text:3&apiKey=9c32c7e1bff2443da2251169a68018ee"
+			alt="Map of Amsterdam"
+			class="map-image"
+		>
+	</div>
+	
+	<!-- Coordinates Table -->
+	<table class="coordinates-table">
+		<tr>
+			<th>Attraction Number</th>
+			<th>Attraction Name</th>
+			<th>Latitude</th>
+			<th>Longitude</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Anne Frank House</td>
+			<td>52.3567</td>
+			<td>4.8944</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Rijksmuseum</td>
+			<td>52.3547</td>
+			<td>4.8875</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Van Gogh Museum</td>
+			<td>52.3547</td>
+			<td>4.8875</td>
+		</tr>
+	</table>
+	
+	<!-- Footer -->
+	<footer class="footer">
+		&copy; 2026 Generated Travel Guide
+	</footer>
+</body>
+</html>
