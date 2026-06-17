@@ -1,0 +1,178 @@
+**Amsterdam Travel Guide**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsterdam Travel Guide</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-image: linear-gradient(to bottom, #3498db, #2ecc71);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Attraction Section Styles */
+        .attractions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .attraction {
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .attraction h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .attraction p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .attraction img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Map Section Styles */
+        .map-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .map-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .coordinates-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .coordinates-table th, .coordinates-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .coordinates-table th {
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Amsterdam Travel Guide</h1>
+        <p>Discover the beauty of Amsterdam, a city of canals, museums, and rich history.</p>
+    </div>
+
+    <!-- Attraction Section -->
+    <div class="attractions">
+        <!-- Attraction 1: Rijksmuseum -->
+        <div class="attraction">
+            <h2>Rijksmuseum</h2>
+            <p>The Rijksmuseum is a national museum in Amsterdam that houses a vast collection of Dutch art and history.</p>
+            <img src="https://image.pollinations.ai/prompt/rijksmuseum%20amsterdam%20travel%20photography%20beautiful%20high%20quality" alt="Rijksmuseum">
+            <p>Latitude: 52.3600</p>
+            <p>Longitude: 4.8852</p>
+        </div>
+
+        <!-- Attraction 2: Anne Frank House -->
+        <div class="attraction">
+            <h2>Anne Frank House</h2>
+            <p>The Anne Frank House is a museum dedicated to the Jewish girl who wrote a diary during WWII, hiding from the Nazis in Amsterdam.</p>
+            <img src="https://image.pollinations.ai/prompt/anne%20frank%20house%20amsterdam%20travel%20photography%20beautiful%20high%20quality" alt="Anne Frank House">
+            <p>Latitude: 52.3752</p>
+            <p>Longitude: 4.8838</p>
+        </div>
+
+        <!-- Attraction 3: Dam Square -->
+        <div class="attraction">
+            <h2>Dam Square</h2>
+            <p>Dam Square is a vibrant public square in the heart of Amsterdam, featuring shops, cafes, and street performers.</p>
+            <img src="https://image.pollinations.ai/prompt/dam%20square%20amsterdam%20travel%20photography%20beautiful%20high%20quality" alt="Dam Square">
+            <p>Latitude: 52.3731</p>
+            <p>Longitude: 4.8945</p>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-container">
+        <div class="map-image">
+            <img src="https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=900&height=400&center=lonlat:4.8952,52.3702&zoom=13&markers=lonlat:4.8852,52.3600;color:%23e63946;size:large;text:1|lonlat:4.8838,52.3752;color:%23e63946;size:large;text:2|lonlat:4.8945,52.3731;color:%23e63946;size:large;text:3&apiKey=9c32c7e1bff2443da2251169a68018ee"
+            alt="Map of Amsterdam"
+            class="map-image"
+            />
+        </div>
+
+        <div class="coordinates-table">
+            <table>
+                <tr>
+                    <th>Attraction Number</th>
+                    <th>Attraction Name</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Rijksmuseum</td>
+                    <td>52.3600</td>
+                    <td>4.8852</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anne Frank House</td>
+                    <td>52.3752</td>
+                    <td>4.8838</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dam Square</td>
+                    <td>52.3731</td>
+                    <td>4.8945</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+This HTML page includes a hero section with a brief introduction to Amsterdam, an attractions section with three top attractions, a map section with a static map image and a coordinates table, and styled CSS to make the page visually appealing. The map image is generated using the Geoapify Static Map API, and the coordinates table is populated with the attraction coordinates.
