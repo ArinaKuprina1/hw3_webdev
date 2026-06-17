@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New York Travel Guide</title>
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #f7f7f7;
+    }
+    
+    .hero {
+      background-image: linear-gradient(to bottom, #333, #555);
+      background-size: 100%;
+      padding: 2rem;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .hero .title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .hero .description {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .attribution {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .attribution .text {
+      flex: 1;
+      padding: 0 1rem;
+    }
+    
+    .attribution .image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1rem;
+    }
+    
+    .attribution .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .attractions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding: 2rem;
+    }
+    
+    .attraction {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .attraction .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    
+    .attraction .description {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .attraction .image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    
+    .attraction .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .map-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      height: 420px;
+      margin: 24px auto;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+      border: 1px solid #ddd;
+      background: #e8eef3;
+    }
+    
+    .map-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .coordinates-table {
+      display: table;
+      width: 100%;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .coordinates-table tr {
+      display: table-row;
+    }
+    
+    .coordinates-table th {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .coordinates-table td {
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .coordinates-table td:first-child {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1 class="title">New York</h1>
+    <p class="description">The city that never sleeps, New York is a melting pot of cultures, cuisines, and experiences.</p>
+  </div>
+  <div class="attribution">
+    <div class="text">
+      <p>Generated travel guide</p>
+    </div>
+    <div class="image">
+      <img src="https://image.pollinations.ai/prompt/new%20york%20travel%20guide%20icon%20vector%20image%20design%20high%20quality" alt="New York travel guide icon">
+    </div>
+  </div>
+  <div class="attractions">
+    <div class="attraction">
+      <h2 class="title">1. Statue of Liberty</h2>
+      <p class="description">A symbol of freedom and democracy, the Statue of Liberty is a must-visit attraction in New York.</p>
+      <img class="image" src="https://image.pollinations.ai/prompt/statue%20of%20liberty%20new%20york%20travel%20photography%20beautiful%20high%20quality" alt="Statue of Liberty">
+    </div>
+    <div class="attraction">
+      <h2 class="title">2. Central Park</h2>
+      <p class="description">A peaceful oasis in the middle of Manhattan, Central Park is a great place to relax and people-watch.</p>
+      <img class="image" src="https://image.pollinations.ai/prompt/central%20park%20new%20york%20travel%20photography%20beautiful%20high%20quality" alt="Central Park">
+    </div>
+    <div class="attraction">
+      <h2 class="title">3. Metropolitan Museum of Art</h2>
+      <p class="description">One of the world's greatest museums, the Met is a must-visit for art lovers and history buffs.</p>
+      <img class="image" src="https://image.pollinations.ai/prompt/metropolitan%20museum%20of%20art%20new%20york%20travel%20photography%20beautiful%20high%20quality" alt="Metropolitan Museum of Art">
+    </div>
+  </div>
+  <div class="map-container">
+    <div class="map-image">
+      <img src="https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=900&height=400&center=lonlat:-74.0060,40.7128&zoom=12&marker=lonlat:-74.0448,40.7128;type:circle;color:%23e63946;size:48;text:1;contentcolor:%23ffffff;shadow:no|lonlat:-74.0458,40.7122;type:circle;color:%23e63946;size:48;text:2;contentcolor:%23ffffff;shadow:no|lonlat:-74.0358,40.7132;type:circle;color:%23e63946;size:48;text:3;contentcolor:%23ffffff;shadow:no&apiKey=9c32c7e1bff2443da2251169a68018ee" alt="Map of New York" class="map-image">
+    </div>
+  </div>
+  <div class="coordinates-table">
+    <table>
+      <tr>
+        <th>Attraction #</th>
+        <th>Attraction Name</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Statue of Liberty</td>
+        <td>40.6933</td>
+        <td>-74.0464</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Central Park</td>
+        <td>40.7859</td>
+        <td>-73.9661</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Metropolitan Museum of Art</td>
+        <td>40.7812</td>
+        <td>-73.9631</td>
+      </tr>
+    </table>
+  </div>
+  <footer>
+    <p>&copy; 2026 Generated Travel Guide</p>
+  </footer>
+</body>
+</html>
