@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New York Travel Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    
+    .hero {
+      background-image: linear-gradient(to bottom, #333, #111);
+      background-size: 100% 300px;
+      background-position: 0% 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+    
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 24px;
+    }
+    
+    .card {
+      background-color: #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+      border-radius: 18px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    
+    .card h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    
+    .card p {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    
+    .map-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      height: 420px;
+      margin: 24px auto;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+      border: 1px solid #ddd;
+      background: #e8eef3;
+    }
+    
+    .map-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .map-container table {
+      font-size: 14px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .map-container table th {
+      background-color: #333;
+      color: #fff;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    
+    .map-container table td {
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>New York City</h1>
+    <p>The city that never sleeps, New York is a vibrant and bustling metropolis that offers something for everyone. From iconic landmarks to world-class museums, New York is a destination that will leave you in awe.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="https://image.pollinations.ai/prompt/beautiful%20statue%20of%20liberty%20new%20york%20city%20travel%20photography%20high%20quality" alt="Statue of Liberty">
+      <h2>Statue of Liberty</h2>
+      <p>A symbol of freedom and democracy, the Statue of Liberty is one of the most iconic landmarks in New York City.</p>
+      <p>Latitude: 40.6943</p>
+      <p>Longitude: -74.0463</p>
+    </div>
+    <div class="card">
+      <img src="https://image.pollinations.ai/prompt/beautiful%20central%20park%20new%20york%20city%20travel%20photography%20high%20quality" alt="Central Park">
+      <h2>Central Park</h2>
+      <p>An 843-acre green oasis in the middle of Manhattan, Central Park is a must-visit destination for nature lovers and photographers.</p>
+      <p>Latitude: 40.7684</p>
+      <p>Longitude: -73.9702</p>
+    </div>
+    <div class="card">
+      <img src="https://image.pollinations.ai/prompt/beautiful%20brooklyn%20bridge%20new%20york%20city%20travel%20photography%20high%20quality" alt="Brooklyn Bridge">
+      <h2>Brooklyn Bridge</h2>
+      <p>A National Historic Landmark, the Brooklyn Bridge is one of the oldest suspension bridges in the United States and offers stunning views of the Manhattan skyline.</p>
+      <p>Latitude: 40.7067</p>
+      <p>Longitude: -73.9964</p>
+    </div>
+  </div>
+  <div class="map-container">
+    <div class="map-container">
+      <img
+        src="https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=900&height=400&center=lonlat:40.7503,-73.9842&zoom=12&marker=lonlat:40.6943,-74.0463;type:circle;color:%23e63946;size:48;text:1;contentcolor:%23ffffff;shadow:no|lonlat:40.7684,-73.9702;type:circle;color:%23e63946;size:48;text:2;contentcolor:%23ffffff;shadow:no|lonlat:40.7067,-73.9964;type:circle;color:%23e63946;size:48;text:3;contentcolor:%23ffffff;shadow:no&apiKey=9c32c7e1bff2443da2251169a68018ee"
+        alt="Map of New York City"
+        class="map-image"
+      />
+    </div>
+    <table>
+      <tr>
+        <th>Attraction #</th>
+        <th>Attraction Name</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Statue of Liberty</td>
+        <td>40.6943</td>
+        <td>-74.0463</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Central Park</td>
+        <td>40.7684</td>
+        <td>-73.9702</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Brooklyn Bridge</td>
+        <td>40.7067</td>
+        <td>-73.9964</td>
+      </tr>
+    </table>
+  </div>
+  <div class="footer">
+    &copy; 2026 Generated Travel Guide
+  </div>
+</body>
+</html>
