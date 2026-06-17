@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amsterdam Travel Guide</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+.hero { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 80px 20px; text-align: center; }
+.hero h1 { font-size: 3rem; margin-bottom: 16px; }
+.hero p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+.attractions { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; padding: 40px 24px; max-width: 1100px; margin: 0 auto; }
+.card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+.card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+.card-body { padding: 20px; }
+.card-body h2 { margin-bottom: 8px; font-size: 1.3rem; }
+.card-body p { color: #666; font-size: 0.95rem; }
+.map-section { padding: 40px 24px; max-width: 1100px; margin: 0 auto; }
+.map-section h2 { font-size: 1.8rem; margin-bottom: 20px; }
+.map-container { width: 100%; max-width: 1000px; height: 420px; margin: 0 auto 24px; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.18); border: 1px solid #ddd; }
+.map-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+th { background: #1a1a2e; color: white; padding: 14px 16px; text-align: left; }
+td { padding: 12px 16px; border-bottom: 1px solid #eee; }
+footer { background: #1a1a2e; color: white; text-align: center; padding: 24px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>Amsterdam</h1>
+  <p>Amsterdam, the charming capital of the Netherlands, is known for its beautiful canals, rich history, and vibrant cultural scene.</p>
+</div>
+<div class="attractions">
+  <div class="card">
+    <img src="https://image.pollinations.ai/prompt/Rijksmuseum%20Amsterdam%20travel%20photography%20beautiful%20high%20quality" alt="Rijksmuseum">
+    <div class="card-body"><h2>Rijksmuseum</h2><p>The Rijksmuseum is a world-famous museum that showcases an impressive collection of Dutch art and history, including works by Rembrandt, Vermeer, and other famous Dutch Masters.</p></div>
+  </div>
+  <div class="card">
+    <img src="https://image.pollinations.ai/prompt/Vondelpark%20Amsterdam%20travel%20photography%20beautiful%20high%20quality" alt="Vondelpark">
+    <div class="card-body"><h2>Vondelpark</h2><p>Vondelpark is a beautiful and tranquil park in the heart of Amsterdam, offering a peaceful escape from the city's bustling streets and a popular spot for picnics, cycling, and people-watching.</p></div>
+  </div>
+  <div class="card">
+    <img src="https://image.pollinations.ai/prompt/Anne%20Frank%20House%20Amsterdam%20travel%20photography%20beautiful%20high%20quality" alt="Anne Frank House">
+    <div class="card-body"><h2>Anne Frank House</h2><p>The Anne Frank House is a museum dedicated to the Jewish girl who wrote a diary during WWII, hiding from the Nazis in Amsterdam. The museum showcases the secret annex where Anne Frank and her family lived in hiding.</p></div>
+  </div>
+</div>
+<div class="map-section">
+  <h2>Map & Coordinates</h2>
+  <div class="map-container"><img src="https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=900&height=400&center=lonlat:4.8952,52.3655&zoom=10&marker=lonlat:4.8842,52.3675;color:%23e63946;size:medium|lonlat:4.8663,52.3412;color:%23e63946;size:medium|lonlat:4.8833,52.3812;color:%23e63946;size:medium&apiKey=c32e3a309c6d4f74866322cc6b07ab75" alt="Map of Amsterdam" /></div>
+  <table>
+    <tr><th>#</th><th>Attraction</th><th>Latitude</th><th>Longitude</th></tr>
+    <tr><td>1</td><td>Rijksmuseum</td><td>52.3675</td><td>4.8842</td></tr>
+    <tr><td>2</td><td>Vondelpark</td><td>52.3412</td><td>4.8663</td></tr>
+    <tr><td>3</td><td>Anne Frank House</td><td>52.3812</td><td>4.8833</td></tr>
+  </table>
+</div>
+<footer><p> 2026 Generated Travel Guide</p></footer>
+</body>
+</html>
