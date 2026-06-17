@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Travel Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .hero {
+            background-image: url('https://image.pollinations.ai/prompt/new%20york%20city%20skyscrapers%20travel%20photography%20beautiful%20high%20quality');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .attraction-card {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+        .attraction-card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .attraction-card p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .map-container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            height: 420px;
+            margin: 24px auto;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+            border: 1px solid #ddd;
+            background: #e8eef3;
+        }
+        .map-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .map-container > div {
+            position: relative;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        table th {
+            background-color: #f0f0f0;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>New York</h1>
+        <p>A city that never sleeps, New York is a melting pot of cultures, art, music, and cuisine. From iconic landmarks like the Statue of Liberty to world-class museums like the Met, New York has something for everyone.</p>
+    </div>
+    <div class="container">
+        <h2>Top 3 Attractions</h2>
+        <div class="attraction-card">
+            <h2>1. Statue of Liberty</h2>
+            <p>The iconic Statue of Liberty is a symbol of freedom and democracy. Take a ferry to Liberty Island to see up close this stunning landmark.</p>
+            <img src="https://image.pollinations.ai/prompt/statue%20of%20liberty%20new%20york%20city%20travel%20photography%20beautiful%20high%20quality" alt="Statue of Liberty">
+            <p>Latitude: 40.6939, Longitude: -74.0464</p>
+        </div>
+        <div class="attraction-card">
+            <h2>2. Central Park</h2>
+            <p>Escape the hustle and bustle of the city in Central Park, an 843-acre green oasis in the middle of Manhattan. Take a stroll, rent a bike, or have a picnic in this beautiful park.</p>
+            <img src="https://image.pollinations.ai/prompt/central%20park%20new%20york%20city%20travel%20photography%20beautiful%20high%20quality" alt="Central Park">
+            <p>Latitude: 40.7484, Longitude: -73.9857</p>
+        </div>
+        <div class="attraction-card">
+            <h2>3. Metropolitan Museum of Art</h2>
+            <p>The Met, as it's affectionately known, is one of the world's greatest museums, with a collection that spans over 5,000 years of human history. From Egyptian antiquities to modern art, you'll find something to fascinate.</p>
+            <img src="https://image.pollinations.ai/prompt/metropolitan%20museum%20of%20art%20new%20york%20city%20travel%20photography%20beautiful%20high%20quality" alt="Metropolitan Museum of Art">
+            <p>Latitude: 40.7851, Longitude: -73.9654</p>
+        </div>
+    </div>
+    <div class="map-container">
+        <img src="https://maps.geoapify.com/v1/staticmap?style=osm-bright-smooth&width=900&height=420&marker=lonlat%3A-74.0464%2C40.6939%3Btype%3Acircle%3Bcolor%3Ared%3Bsize%3A48%3Btext%3A1%3Bcontentsize%3A28%3Bcontentcolor%3Awhite%3Bshadow%3Ano%7Clonlat%3A-73.9857%2C40.7484%3Btype%3Acircle%3Bcolor%3Ared%3Bsize%3A48%3Btext%3A2%3Bcontentsize%3A28%3Bcontentcolor%3Awhite%3Bshadow%3Ano%7Clonlat%3A-73.9654%2C40.7851%3Btype%3Acircle%3Bcolor%3Ared%3Bsize%3A48%3Btext%3A3%3Bcontentsize%3A28%3Bcontentcolor%3Awhite%3Bshadow%3Ano&apiKey=9c32c7e1bff2443da2251169a68018ee"
+        alt="Map of New York with numbered attraction pins"
+        class="map-image"
+        />
+    </div>
+    <table>
+        <tr>
+            <th>Attraction Number</th>
+            <th>Attraction Name</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Statue of Liberty</td>
+            <td>40.6939</td>
+            <td>-74.0464</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Central Park</td>
+            <td>40.7484</td>
+            <td>-73.9857</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Metropolitan Museum of Art</td>
+            <td>40.7851</td>
+            <td>-73.9654</td>
+        </tr>
+    </table>
+    <div class="footer">
+        <p>&copy; 2026 Generated Travel Guide</p>
+    </div>
+</body>
+</html>
